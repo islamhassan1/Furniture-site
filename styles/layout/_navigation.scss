@@ -1,0 +1,103 @@
+.left_area h3 {
+	color: white;
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: 900;
+	text-align: center;
+}
+
+.left_area span {
+	color: $medium-blue;
+}
+
+.right_area .basket {
+	padding: 5px;
+	background-color: $medium-blue;
+	text-decoration: none;
+	float: right;
+	margin-top: -25px;
+	margin-right: 5%;
+	border-radius: 2px;
+	font-size: 15px;
+	font-weight: 600;
+	color: white;
+	transition: 0.5s;
+	transition-property: background-color;
+}
+
+.right_area .basket:hover {
+	background-color: white;
+	color: $dark-blue;
+}
+
+.sidebar {
+	background-color: rgb(53, 52, 51);
+	margin-top: 70px;
+	padding-top: 30px;
+	position: fixed;
+	left: 0;
+	width: 250px;
+	height: 100%;
+	transition: 0.5s;
+	transition-property: left;
+}
+
+.sidebar a {
+	color: white;
+	display: block;
+	width: 100%;
+	line-height: 60px;
+	text-decoration: none;
+	padding-left: 40px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	transition-property: background-color;
+}
+
+.sidebar a:hover {
+	background-color: $medium-blue;
+}
+
+.sidebar i {
+	padding: 10px;
+}
+
+label #sidebar_btn {
+	z-index: 1;
+	color: white;
+	position: fixed;
+	cursor: pointer;
+	left: 5%;
+	font-size: 20px;
+	margin: 5px 0;
+	transition: 0.5s;
+	transition-property: color;
+}
+
+label #sidebar_btn:hover {
+	color: $light-blue;
+}
+
+#check {
+	display: none;
+}
+
+#check:checked ~ .sidebar {
+	left: -190px;
+}
+
+#check:checked ~ .sidebar a span {
+	display: none;
+}
+
+#check:checked ~ .sidebar a {
+	font-size: 20px;
+	margin-left: 160px;
+	width: 80px;
+}
+
+.content {
+	margin-left: 250px;
+	background: url();
+}
