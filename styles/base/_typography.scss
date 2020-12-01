@@ -1,5 +1,14 @@
-body {
+* {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: var(--mainblack);
+	background-color: var(--mainwhite);
 	font-family: "lato", sans-serif;
+	background-image: url(/image/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 }

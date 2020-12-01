@@ -1,4 +1,11 @@
-/* colors */
-$light-blue: #6163d5;
-$medium-blue: #555cc5;
-$dark-blue: #1928af;
+//color
+:root {
+	--primarycolor: #f09d51;
+	--mainwhite: #fff;
+	--mainblack: rgb(119, 114, 114);
+	--maingrey: #ececec;
+
+	//spacinh
+	--mainspacing: 0.1rem;
+	--maintransition: all 0.3s linear;
+}

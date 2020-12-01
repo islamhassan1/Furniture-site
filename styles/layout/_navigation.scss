@@ -1,1 +1,60 @@
+.list-unstyled {
+	list-style: none;
+}
 
+header {
+	padding: 30px;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+nav .nav-img {
+	width: 60px;
+	margin-top: -30px;
+}
+nav .list-unstyled {
+	flex: 1;
+	max-width: 50%;
+	display: flex;
+	justify-content: space-evenly;
+}
+.list-unstyled li .link-item {
+	text-decoration: none;
+	font-weight: bold;
+	position: relative;
+	padding: 10px;
+	color: var(--primarycolor);
+}
+.list-unstyled li .link-item:hover {
+	border: 2px solid var(--primarycolor);
+	color: var(--mainblack);
+}
+
+nav .list-unstyled2 li {
+	margin: 5px;
+	font-size: 20px;
+	color: var(--mainblack);
+}
+
+nav ul li {
+	display: inline;
+	padding: 0;
+	margin: 0;
+}
+
+nav .list-unstyled2 li .icon {
+	position: relative;
+	margin-right: 2px;
+}
+
+nav .list-unstyled2 li .zero {
+	border-radius: 50%;
+	background-color: var(--mainblack);
+	color: var(--mainwhite);
+	font-weight: bold;
+	padding: 0px 2px;
+	font-size: 17px;
+}
+
+///////////////////////////////////////
