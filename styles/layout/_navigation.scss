@@ -24,11 +24,11 @@ nav .list-unstyled {
 	font-weight: bold;
 	position: relative;
 	padding: 10px;
-	color: var(--primarycolor);
+	color: var(--mainblack);
 }
 .list-unstyled li .link-item:hover {
-	border: 2px solid var(--primarycolor);
-	color: var(--mainblack);
+	border: 2px solid var(--mainblack);
+	color: var(--primarycolor);
 }
 
 nav .list-unstyled2 li {
@@ -49,12 +49,15 @@ nav .list-unstyled2 li .icon {
 }
 
 nav .list-unstyled2 li .zero {
-	border-radius: 50%;
-	background-color: var(--mainblack);
+	position: absolute;
+	top: 25px;
+	right: 185px;
+	border-radius: 30%;
+	background-color: var(--primarycolor);
 	color: var(--mainwhite);
 	font-weight: bold;
-	padding: 0px 2px;
-	font-size: 17px;
+	padding: 0 2px;
+	font-size: 13px;
 }
 
 ///////////////////////////////////////
