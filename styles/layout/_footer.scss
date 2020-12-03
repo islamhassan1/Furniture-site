@@ -1,0 +1,78 @@
+footer {
+	margin-top: 5% 5%;
+	background-color: black;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+}
+.footer {
+	display: flex;
+}
+.footer-1 {
+	flex: 1;
+	margin-left: 5rem;
+}
+.footer-1 p {
+	color: var(--maincolor);
+}
+.footer-2 {
+	flex: 1;
+	margin-top: 80px;
+	margin-left: auto;
+}
+.footer-2 h2 {
+	margin-left: 120px;
+	color: white;
+}
+.footer-2 h3 {
+	margin-left: 120px;
+	color: white;
+}
+.footer-2 .info {
+	margin-left: 130px;
+	margin-top: 40px;
+	list-style-type: none;
+}
+.footer-2 .info li {
+	margin-top: 10px;
+}
+.footer-2 .info li a {
+	color: var(--maincolor);
+	text-decoration: none;
+}
+.footer-2 .info li a:hover {
+	color: white;
+}
+.footer-1 img {
+	margin: 50px 0px;
+}
+
+.footer-2 input {
+	outline: 0;
+	border-width: 0 0 2px;
+	border-color: white;
+	margin-left: 130px;
+	margin-top: 80px;
+	list-style-type: none;
+	background-color: black;
+	width: 150px;
+}
+.footer-2 input:focus {
+	border-color: var(--maincolor);
+	color: white;
+}
+.footer-2 .sub {
+	margin-left: 0px;
+	margin-top: 85px;
+	position: absolute;
+	color: white;
+}
+
+.footer-2 .social {
+	margin-left: 130px;
+	margin-top: 100px;
+}
+.footer-2 .social .so {
+	margin: 0 4px;
+	color: white;
+}
