@@ -11,10 +11,13 @@
 	margin: 0 auto;
 	max-width: 1170px;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minma(260px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 	grid-column-gap: 1.5rem;
 	grid-row-gap: 2rem;
 	grid-template-columns: repeat(4, 1fr);
+	//grid-template-columns: auto auto auto auto;
+	//grid-gap: 20px;
+	//position: relative;
 }
 
 .img-container {
@@ -69,7 +72,7 @@
 }
 
 .section-products-center h4 {
-	margin-top: 0.7rem;
+	margin: 0.7rem;
 	letter-spacing: var(--mainspacing);
 	color: var(--primarycolor);
 	text-align: center;

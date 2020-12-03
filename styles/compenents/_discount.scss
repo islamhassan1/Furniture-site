@@ -1,0 +1,64 @@
+.descount-desc {
+	flex: 2;
+	background-color: rgb(241, 227, 227);
+	padding: 20px;
+	position: relative;
+}
+
+.descount-desc .top {
+	position: relative;
+	padding-left: 10px;
+	padding-top: 20px;
+}
+.descount-desc .top .icon {
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 30px;
+}
+.descount-desc .top .discount-subtitle {
+	position: relative;
+	padding-left: 30px;
+	margin-top: 20px;
+	font-size: 15px;
+	margin-bottom: 20px;
+}
+
+.descount-desc .bolletes {
+	text-align: right;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+.descount-desc .bolletes span {
+	display: inline-block;
+	width: 50px;
+	height: 2px;
+	background: var(--maincolor);
+	margin-left: 10px;
+}
+
+.descount-item1,
+.descount-item2 {
+	flex: 1;
+	height: 300px;
+}
+.descount-item1 {
+	background-image: url(/image/cms-banner-1.jpg);
+	background-size: cover;
+	margin: 0 20px;
+	padding: 20px;
+}
+
+.descount-item1:hover {
+	transform: scale(1.2);
+}
+.descount-item2 {
+	background-image: url(/image/cms-banner-2.jpg);
+	background-size: cover;
+	margin: 0 20px;
+	padding: 20px;
+}
+.descount-item2:hover {
+	transform: scale(1.2);
+}
