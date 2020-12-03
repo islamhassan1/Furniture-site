@@ -1,0 +1,31 @@
+.banner {
+	text-align: center;
+	display: inline-block;
+	text-align: center;
+	background-color: rgba(225, 225, 225, 0.8);
+	padding: 2rem;
+
+	&-title {
+		font-size: 2.5rem;
+		text-transform: uppercase;
+		letter-spacing: var(--mainspacing);
+		margin-bottom: 3rem;
+	}
+
+	&-btn {
+		padding: 1rem 3rem;
+		text-transform: uppercase;
+		letter-spacing: var(--mainspacing);
+		font-size: .8rem;
+		background-color: var(--primarycolor);
+		color: var(--maincolor);
+		font-weight: bolder;
+		border: 1px solid var(--primarycolor);
+		transition: var(--maintransition);
+		cursor: pointer;
+	}
+	&-btn:hover {
+		background: transparent;
+		color: var(--primarycolor);
+	}
+}
