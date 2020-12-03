@@ -20,6 +20,10 @@
 	z-index: 1;
 }
 
+.footer2 ::placeholder {
+	color: var(--primarycolor);
+}
+
 .footer2 .form-control {
 	height: 60px;
 }
@@ -37,6 +41,10 @@ input::placeholder {
 .footer3 {
 	padding: 220px 70px;
 	position: absolute;
+}
+
+.footer3 ::placeholder {
+	color: var(--primarycolor);
 }
 
 .footer3 textarea {

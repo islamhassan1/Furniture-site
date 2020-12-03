@@ -68,6 +68,10 @@ footer {
 	color: white;
 }
 
+.footer-2 input::placeholder {
+	color: var(--primarycolor);
+}
+
 .footer-2 .social {
 	margin-left: 130px;
 	margin-top: 100px;
