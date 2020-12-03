@@ -1,1 +1,19 @@
+.section-header {
+	min-height: calc(100vh-60px);
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	padding-bottom: 8%;
+	background-image: url(/image/background.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 42rem;
+}
 
+////////////////// ////////////
+
+.section-products {
+	padding: 4rem 0;
+}
