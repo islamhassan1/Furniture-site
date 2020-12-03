@@ -1,0 +1,76 @@
+.section-contact-us h1 {
+	font-weight: bold;
+	font-size: 40px;
+	color: white;
+	text-align: center;
+	padding: 1rem 0;
+}
+
+.section-contact-us h1:after {
+	content: "";
+	display: block;
+	border: 1px solid white;
+	width: 50px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.footer2 {
+	padding: 20px 70px;
+	z-index: 1;
+}
+
+.footer2 .form-control {
+	height: 60px;
+}
+
+.footer2 .form-control {
+	height: 50px;
+	width: 500px;
+}
+input::placeholder {
+	color: red;
+	font-size: 1.2em;
+	//text-align: center;
+}
+
+.footer3 {
+	padding: 220px 70px;
+	position: absolute;
+}
+
+.footer3 textarea {
+	width: 1190px;
+}
+
+.footer4 {
+	position: relative;
+	text-align: center;
+	padding-top: 10%;
+}
+
+.section-contact-us .btn {
+	width: 200px;
+	height: 60px;
+	background-color: var(--primarycolor);
+	color: var(--maincolor);
+	font-weight: bolder;
+	font-size: .8rem;
+	text-transform: uppercase;
+	letter-spacing: var(--mainspacing);
+	border: 1px solid var(--primarycolor);
+	transition: var(--maintransition);
+	cursor: pointer;
+}
+
+.section-contact-us .btn:hover {
+	background: transparent;
+	color: var(--primarycolor);
+}
+
+.all-input {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+	margin: 5%;
+}
