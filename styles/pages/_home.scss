@@ -22,6 +22,34 @@
 .section-discount {
 	display: grid;
 	display: flex;
-	margin-bottom: 50px;
-	margin-top: 50px;
+	margin: 50px;
 }
+
+////////////////////////////////
+.section-sprites {
+	display: flex;
+	margin: 5rem;
+}
+
+///////////////////////////
+.section-product2 {
+	text-align: center;
+	margin: 5rem;
+}
+//////////////////////////////
+.section-planmenu {
+	background-color: #60a9ff;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	padding-left: 19%;
+	padding-top: 1%;
+}
+///////////////////////////////
+.section-contact-us {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/image/background2.jpg);
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+////////////////////////////
