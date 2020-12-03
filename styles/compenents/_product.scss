@@ -1,0 +1,76 @@
+.section-products-title h2 {
+	text-align: center;
+	font-size: 2.5rem;
+	margin-bottom: 5rem;
+	text-transform: capitalize;
+	letter-spacing: var(--mainspacing);
+}
+
+.section-products-center {
+	width: 90vw;
+	margin: 0 auto;
+	max-width: 1170px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minma(260px, 1fr));
+	grid-column-gap: 1.5rem;
+	grid-row-gap: 2rem;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.img-container {
+	position: relative;
+	overflow: hidden;
+}
+
+.img-container:hover .product-img {
+	opacity: 0.5;
+}
+
+.img-container:hover .bag-btn {
+	transform: translatex(0);
+}
+
+.product-img {
+	display: block;
+	width: 100%;
+	min-height: 12rem;
+	transition: var(--maintransition);
+}
+
+.bag-btn {
+	position: absolute;
+	top: 70%;
+	left: 0;
+	background: var(--primarycolor);
+	border: none;
+	text-transform: uppercase;
+	padding: 0.5rem 0.75rem;
+	letter-spacing: var(--mainspacing);
+	font-weight: bold;
+	transition: var(--maintransition);
+	transform: translatex(180%);
+	cursor: pointer;
+}
+
+.bag-btn:hover {
+	color: var(--maincolor);
+}
+
+.fa-shopping-cart {
+	margin-right: 0.5rem;
+}
+
+.section-products-center h3 {
+	text-transform: capitalize;
+	font-size: 1.1rem;
+	margin-top: 1rem;
+	letter-spacing: var(--mainspacing);
+	text-align: center;
+}
+
+.section-products-center h4 {
+	margin-top: 0.7rem;
+	letter-spacing: var(--mainspacing);
+	color: var(--primarycolor);
+	text-align: center;
+}
