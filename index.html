@@ -8,7 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
     <link rel="stylesheet" href="./styles/style.scss">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous"></head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <script src="app.js" async></script>
+</head>
 <body>
     <!-- start of navigation ----------------->
     <header>
@@ -407,26 +409,27 @@
                       <img src="image/bed1.jpg" alt="product" >
                       <div>
                           <h4>Queen Bed</h4>
-                          <h5>160$</h5>
+                          <h5 class="cart-price">160$</h5>
                           <span class="remove-item">remove</span>
                       </div>
                       <div>
-                        <i class="fas fa-chevron-up"></i>
+                        <!--<i class="fas fa-chevron-up"></i>
                         <p class="item-amount">1</p>
-                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-chevron-down"></i>-->
+                        <input class="cart-quantity-input" type="number" value="1">
                       </div>
                   </div>
               </div>
               <!--  end of card 1 ----------------->
               <!--  start of footer card----------------->
               <div class="cart-footer">
-                  <h3>Your Total : $ <span class="cart-total">0</span></h3>
-                  <button class="clear-cart banner-btn">claer cart</button>
+                  <h3>Your Total : <span class="cart-total">160$</span></h3>
+                  <button class="clear-cart banner-btn">Purchase</button>
               </div>
           </div>
       </div>
   </section>
   <!--  end of card ----------------->
-<script src="app.js"></script>
+
 </body>
 </html>
