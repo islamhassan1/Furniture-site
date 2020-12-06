@@ -1,54 +1,46 @@
-if (document.readyState == 'loading'){
-    document.addEventListener('DOMContentLoaded' , ready)
-} else {
-    ready()
-}
+//varibles
 
-function ready(){
-    var removeCardItemButtons = document.getElementsByClassName("remove-item")
-    console.log(removeCardItemButtons)
-    for(var i=0 ; i < removeCardItemButtons.length; i++){
-    var button = removeCardItemButtons[i]
-    button.addEventListener('click', removeCartItem)
-        
+const cartBtn = document.querySelector('.icon');
+const closeCartBtn = document.querySelector('.close-cart');
+const clearCartBtn = document.querySelector('.clear-cart');
+const cartDOM = document.querySelector('.cart');
+const cartOverlay = document.querySelector('.car-overlay');
+const cartItems = document.querySelector('.zero');
+const cartTotal = document.querySelector('.cart-total');
+const cartContent = document.querySelector('.cart-content');
+const productsDOM = document.querySelector('.section-products-center');
+
+
+
+//// cart
+let cart = [];
+
+
+//getting the products
+class Products {
+    async getProducts() {
+        try {
+            let result = await fetch('products.json')
+            let data = await result.json();
+            return data;
+        }catch(error){
+            console.log(error);
+        }
     }
-
-    var quantityInput = document.getElementsByClassName('cart-quantity-input')
-    for(var i=0 ; i < quantityInput.length; i++) {
-        var input = quantityInput[i]
-        input.addEventListener('change' ,quantitychanged)
-    }
 }
 
+///display products
+class UI{}
 
-function removeCartItem(event) {
-    var buttonClicked = event.target
-        buttonClicked.parentElement.parentElement.remove()
-        updateCartTotal()
-}
+//local storge
+class Storage{}
 
-function quantitychanged(event){
-    var input = event.target
-    if(isNaN(input.value) || input.value <= 0 ){
-        input.value = 1
-    }
-    updateCartTotal()
-}
+document.addEventListener("DOMContentLoaded", () => {
+    const ui = new UI()
+    const products = new Products();
 
 
+    //get all products
+    products.getProducts().then(data => console.log(data));
 
-
-function updateCartTotal() {
-    var cartItemContainer = document.getElementsByClassName('cart-content')[0]
-    var cartRows = cartItemContainer.getElementsByClassName('cart-item')
-    var total = 0
-    for(var i=0; i < cartRows.length; i++){
-        var cartRow = cartRows[i]
-        var priceElement = cartRow.getElementsByClassName ('cart-price')[0]
-        var quantityElement = cartRow.getElementsByClassName ('icart-quantity-input')[0]
-        var price = parseFloat(priceElement.innerHTML.replace('$',''))
-        var quantity = quantityElement.value
-        total = total + (price * quantity)
-    }
-    document.getElementsByClassName('cart-total')[0].innerText = '$' + total
-}
+});   
