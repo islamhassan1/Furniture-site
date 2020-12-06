@@ -4,6 +4,10 @@
 	color: white;
 	text-align: center;
 	padding: 1rem 0;
+
+	@include respond(phone) {
+		font-size: 20px;
+	}
 }
 
 .section-contact-us h1:after {
@@ -18,6 +22,18 @@
 .footer2 {
 	padding: 20px 70px;
 	z-index: 1;
+
+	@include respond(tap-land) {
+		padding: 20px 60px;
+	}
+
+	@include respond(tap-port) {
+		padding: 20px 10px;
+	}
+
+	@include respond(phone) {
+		padding: 20px 5px;
+	}
 }
 
 .footer2 ::placeholder {
@@ -31,6 +47,18 @@
 .footer2 .form-control {
 	height: 50px;
 	width: 500px;
+
+	@include respond(tap-land) {
+		width: 400px;
+	}
+
+	@include respond(tap-port) {
+		width: 380px;
+	}
+
+	@include respond(phone) {
+		width: 250px;
+	}
 }
 input::placeholder {
 	color: red;
@@ -41,6 +69,14 @@ input::placeholder {
 .footer3 {
 	padding: 220px 70px;
 	position: absolute;
+
+	@include respond(tap-land) {
+		padding: 220px 60px;
+	}
+
+	@include respond(tap-port) {
+		padding: 220px 10px;
+	}
 }
 
 .footer3 ::placeholder {
@@ -49,12 +85,36 @@ input::placeholder {
 
 .footer3 textarea {
 	width: 1190px;
+
+	@include respond(tap-land) {
+		width: 950px;
+	}
+
+	@include respond(tap-port) {
+		width: 800px;
+	}
+
+	@include respond(phone) {
+		width: 520px;
+	}
 }
 
 .footer4 {
 	position: relative;
 	text-align: center;
 	padding-top: 10%;
+
+	@include respond(tap-land) {
+		padding-top: 15%;
+	}
+
+	@include respond(tap-port) {
+		padding-top: 20%;
+	}
+
+	@include respond(phone) {
+		padding-top: 30%;
+	}
 }
 
 .section-contact-us .btn {
@@ -69,6 +129,10 @@ input::placeholder {
 	border: 1px solid var(--primarycolor);
 	transition: var(--maintransition);
 	cursor: pointer;
+
+	@include respond(tap-land) {
+		font-size: 1.2rem;
+	}
 }
 
 .section-contact-us .btn:hover {

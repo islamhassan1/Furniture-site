@@ -4,6 +4,14 @@
 	padding-bottom: 2%;
 	font-weight: bold;
 	margin: 1rem 0;
+
+	@include respond(tap-port) {
+		padding-left: 40%;
+	}
+
+	@include respond(phone) {
+		padding-left: 35%;
+	}
 }
 
 .section-planmenu h1:after {
@@ -13,6 +21,10 @@
 	width: 50px;
 	margin-left: 12%;
 	margin-top: 20px;
+
+	@include respond(phone) {
+		margin-left: 25%;
+	}
 }
 
 .plan1 {

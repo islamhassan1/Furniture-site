@@ -29,6 +29,10 @@
 .section-sprites {
 	display: flex;
 	margin: 5rem;
+
+	@include respond(phone) {
+		margin: 1rem;
+	}
 }
 
 ///////////////////////////
@@ -44,6 +48,14 @@
 	min-height: 100vh;
 	padding-left: 19%;
 	padding-top: 1%;
+
+	@include respond(tap-land) {
+		padding-left: 10%;
+	}
+
+	@include respond(tap-port) {
+		padding-left: 0;
+	}
 }
 ///////////////////////////////
 .section-contact-us {
@@ -51,5 +63,9 @@
 	height: 100vh;
 	background-repeat: no-repeat;
 	background-position: center;
+
+	@include respond(phone) {
+		height: 650px;
+	}
 }
 ////////////////////////////

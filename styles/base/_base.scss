@@ -1,0 +1,19 @@
+html {
+	font-size: 90%;
+
+	@include respond(phone) {
+		font-size: 50%;
+	}
+
+	@include respond(tap-port) {
+		font-size: 60%;
+	}
+
+	@include respond(tap-land) {
+		font-size: 70%;
+	}
+
+	@include respond(big-desktop) {
+		font-size: 80%;
+	}
+}

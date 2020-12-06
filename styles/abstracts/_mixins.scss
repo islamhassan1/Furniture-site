@@ -1,0 +1,36 @@
+// media qurey
+/* 
+0-600px :  phone
+600-900px : tablet portrait
+900-1200px : tablet landscape
+1800px : big desktop
+
+*/
+
+//////////////////
+
+@mixin respond($breakpoint) {
+	@if $breakpoint == phone {
+		@media (max-width: 37.5rem) {
+			@content;
+		} //600px
+	}
+
+	@if $breakpoint == tap-port {
+		@media (max-width: 56.25rem) {
+			@content;
+		} //900px
+	}
+
+	@if $breakpoint == tap-land {
+		@media (max-width: 75rem) {
+			@content;
+		} //1200px
+	}
+
+	@if $breakpoint == big-desktop {
+		@media (max-width: 112.5rem) {
+			@content;
+		} //1800px
+	}
+}

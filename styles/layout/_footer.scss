@@ -11,6 +11,13 @@ footer {
 .footer-1 {
 	flex: 1;
 	margin-left: 5rem;
+	@include respond(tap-land) {
+		margin-left: 3rem;
+	}
+
+	@include respond(tap-port) {
+		margin-left: 2rem;
+	}
 }
 .footer-1 p {
 	color: var(--maincolor);
@@ -23,15 +30,45 @@ footer {
 .footer-2 h2 {
 	margin-left: 120px;
 	color: white;
+
+	@include respond(tap-land) {
+		margin-left: 80px;
+	}
+
+	@include respond(phone) {
+		margin-left: 30px;
+		font-size: 15px;
+	}
 }
 .footer-2 h3 {
 	margin-left: 120px;
 	color: white;
+
+	@include respond(tap-land) {
+		margin-left: 80px;
+	}
+
+	@include respond(tap-port) {
+		margin-left: 70px;
+	}
+
+	@include respond(phone) {
+		margin-left: 30px;
+		font-size: 15px;
+	}
 }
 .footer-2 .info {
 	margin-left: 130px;
 	margin-top: 40px;
 	list-style-type: none;
+
+	@include respond(tap-land) {
+		margin-left: 80px;
+	}
+
+	@include respond(phone) {
+		margin-left: 30px;
+	}
 }
 .footer-2 .info li {
 	margin-top: 10px;
@@ -45,6 +82,10 @@ footer {
 }
 .footer-1 img {
 	margin: 50px 0px;
+
+	@include respond(tap-port) {
+		margin: 10px 0px;
+	}
 }
 
 .footer-2 input {
@@ -56,6 +97,20 @@ footer {
 	list-style-type: none;
 	background-color: black;
 	width: 150px;
+
+	@include respond(tap-land) {
+		margin-left: 80px;
+	}
+
+	@include respond(tap-port) {
+		margin-left: 70px;
+		width: 100px;
+	}
+
+	@include respond(phone) {
+		margin-left: 30px;
+		width: 90px;
+	}
 }
 .footer-2 input:focus {
 	border-color: var(--maincolor);
@@ -70,11 +125,27 @@ footer {
 
 .footer-2 input::placeholder {
 	color: var(--primarycolor);
+
+	@include respond(phone) {
+		font-size: 12px;
+	}
 }
 
 .footer-2 .social {
 	margin-left: 130px;
 	margin-top: 100px;
+
+	@include respond(tap-land) {
+		margin-left: 80px;
+	}
+
+	@include respond(tap-port) {
+		margin-left: 70px;
+	}
+	@include respond(phone) {
+		margin-left: 30px;
+		font-size: 8px;
+	}
 }
 .footer-2 .social .so {
 	margin: 0 4px;

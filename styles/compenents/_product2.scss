@@ -27,6 +27,22 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 20px;
+
+	@include respond(tap-land) {
+		grid-gap: 5px;
+		margin-left: -30px;
+	}
+
+	@include respond(tap-port) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 100px;
+	}
+
+	@include respond(phone) {
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 100px;
+		margin: 5% 10%;
+	}
 }
 .product-img {
 	position: relative;

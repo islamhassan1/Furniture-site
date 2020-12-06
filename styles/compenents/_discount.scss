@@ -9,6 +9,10 @@
 	position: relative;
 	padding-left: 10px;
 	padding-top: 20px;
+
+	@include respond(phone) {
+		font-size: 20px;
+	}
 }
 .descount-desc .top .icon {
 	position: absolute;
@@ -22,6 +26,11 @@
 	margin-top: 20px;
 	font-size: 15px;
 	margin-bottom: 20px;
+
+	@include respond(phone) {
+		position: absolute;
+		margin: 25px -40px;
+	}
 }
 
 .descount-desc .bolletes {

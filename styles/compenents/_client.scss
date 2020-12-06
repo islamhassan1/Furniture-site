@@ -1,3 +1,15 @@
 .logo img {
 	margin: 60px 60px;
+
+	@include respond(tap-land) {
+		margin: 32px 32px;
+	}
+
+	@include respond(tap-port) {
+		margin: 8px 8px;
+	}
+
+	@include respond(phone) {
+		width: 81px;
+	}
 }
