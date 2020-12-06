@@ -55,6 +55,6 @@
           "price": 200,
           "image": { "fields": { "file": { "url": "./images/product-7.jpeg" } } }
         }
-      },
+      }
     ]
   }
